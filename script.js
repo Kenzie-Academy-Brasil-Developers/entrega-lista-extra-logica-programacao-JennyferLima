@@ -1,3 +1,9 @@
+//Calcular valor total para recebimento: salário e vendas. 
+//Declarar duas variáveis, parâmetros salário fixo e vendas
+//Comissão de 3% para vendas em até R$ 1200.
+//Comissão de 5% para vendas acima de R$ 1200.
+//Declarar codincional.
+
 function calculateSalary(salarioFixo, vendas){
     let comissao = 0;
     let salarioTotal = 0;
@@ -16,8 +22,13 @@ function calculateSalary(salarioFixo, vendas){
 //console.log(calculateSalary(2000,2500))
 
 
-//Declarar função com os parâmetros de saque, salário fixo e vendas
-//
+
+
+//Calcular quantidade de notas de cada cédula do saque.
+//Declarar função com os parâmetros de saque, salário fixo e vendas.
+//Declarar array das notas para saque.
+//Ex. de output: Foram sacadas 3 notas de R$ 10,00. Valor do saque foi R$ 30,00 e o novo saldo é 5 000,00.
+
 function cashMachine(valorSaque, salarioFixo, vendas){
 
     let saque = valorSaque;
@@ -35,7 +46,7 @@ function cashMachine(valorSaque, salarioFixo, vendas){
         let qtdNotas = parseInt(valorSaque/elemento);
 
         if(qtdNotas > 0){
-            console.log(`Foram sacadas ${qtdNotas} notas de R$ ${elemento}`)
+            console.log(`Foram sacadas ${qtdNotas} notas de R$ ${elemento},00.`)
         }
         saque = saque % elemento;
 
@@ -46,6 +57,8 @@ function cashMachine(valorSaque, salarioFixo, vendas){
 }
 cashMachine(4500, 15000, 6785)
 //console.log(cashMachine(4500, 15000, 6785))
+
+
 
 
 //Criar função que receba 3 parâmetros: estoques atual, máximo e mínimo.
