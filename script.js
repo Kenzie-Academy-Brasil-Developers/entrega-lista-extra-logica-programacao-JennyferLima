@@ -18,14 +18,14 @@ function calculateSalary(salarioFixo, vendas){
 
     return salarioTotal;
 }
-//(calculateSalary(2000,2500))
+(calculateSalary(2000,2500))
 //console.log(calculateSalary(2000,2500))
 
 
 
 
 //Calcular quantidade de notas de cada cédula do saque.
-//Declarar função com os parâmetros de saque, salário fixo e vendas.
+//Declarar função com os parâmetros de saque, salário fixo e vendas.wq
 //Declarar array das notas para saque.
 //Ex. de output: Foram sacadas 3 notas de R$ 10,00. Valor do saque foi R$ 30,00 e o novo saldo é 5 000,00.
 
