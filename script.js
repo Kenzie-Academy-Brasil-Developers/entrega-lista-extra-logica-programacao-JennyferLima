@@ -8,17 +8,18 @@ function calculateSalary(salarioFixo, vendas){
     let comissao = 0;
     let salarioTotal = 0;
 
-    while(vendas <= 1200){
+    if(vendas <= 1200){
         comissao = vendas * (0.03);
     }
-    if(vendas > 1200){
-        comissao = vendas * (0.05);
+    else if(vendas > 1200){  
+        let calculoDos3Porcento = 3/100 * 1200;
+        comissao = ((vendas - 1200) * 0.05) + calculoDos3Porcento;
     }
     salarioTotal = salarioFixo + comissao;
 
     return salarioTotal;
 }
-(calculateSalary(2000,2500))
+calculateSalary(2000,2500)
 //console.log(calculateSalary(2000,2500))
 
 
